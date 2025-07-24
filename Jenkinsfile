@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {  
             steps {  
                 echo 'building ...'
-                sh 'docker stop jServer'  
-                sh 'docker rm jServer'  
+                // sh 'docker stop jServer'  
+                // sh 'docker rm jServer'  
                 sh 'docker build -t jServer https://github.com/francislung1994/Jenkins.git'  
             }  
         }  
