@@ -7,7 +7,7 @@ pipeline {
                 echo 'building ...'
                 // sh 'docker stop jServer'  
                 // sh 'docker rm jServer'  
-                sh 'docker build -t jserver https://github.com/francislung1994/Jenkins.git'  
+                sh 'docker build -t jserver https://github.com/francislung1994/docker.git'  
             }  
         }  
 
