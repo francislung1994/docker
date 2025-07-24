@@ -14,7 +14,7 @@ pipeline {
         stage('Deploy') {  
             steps {  
                 echo 'deploying ...'
-                sh 'docker container run -p 3000:3000 jserver'  
+                sh 'docker container run -d -p 3000:3000 jserver'  
                 // sh 'kubectl apply -f deployment.yaml'  
             }  
         }  
